@@ -1,0 +1,97 @@
+/* About — match dorklord666 visual language (huge type, centered, red glow) */
+
+.about-section {
+	position: relative;
+	z-index: 4;
+	width: 100%;
+	margin: 10rem 0 8rem;
+	padding: 0 2rem 2rem;
+	text-align: center;
+	overflow: hidden;
+}
+
+.about-title {
+	margin: 0 auto 3rem;
+	font-size: clamp(8rem, 18vw, 18rem);
+	font-weight: 800;
+	line-height: 78%;
+	letter-spacing: -0.04em;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.about-lead {
+	width: min(100%, 90rem);
+	margin: 0 auto 2rem;
+	font-size: clamp(2.8rem, 5.5vw, 6.4rem);
+	font-weight: 800;
+	line-height: 92%;
+	letter-spacing: -0.04em;
+	text-transform: uppercase;
+	text-align: center;
+	color: var(--text-color, #fe0000);
+}
+
+.about-sub {
+	width: min(100%, 70rem);
+	margin: 0 auto 5rem;
+	font-size: clamp(1.8rem, 2.8vw, 3.2rem);
+	font-weight: 700;
+	line-height: 100%;
+	letter-spacing: -0.03em;
+	text-transform: uppercase;
+	text-align: center;
+	color: #fff;
+	opacity: 0.9;
+}
+
+.about-embeds {
+	width: min(100%, 1200px);
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 2.4rem;
+	justify-items: center;
+	align-items: start;
+}
+
+.about-embed {
+	width: 100%;
+	max-width: 520px;
+	display: flex;
+	justify-content: center;
+}
+
+.about-embed .twitter-tweet,
+.about-embed twitter-widget {
+	margin: 0 auto !important;
+}
+
+@media (min-width: 1000px) {
+	.about-embeds {
+		grid-template-columns: 1fr 1fr;
+		gap: 3rem;
+		align-items: start;
+	}
+}
+
+@media (max-width: 768px) {
+	.about-section {
+		margin: 6rem 0 4rem;
+		padding: 0 1.2rem;
+	}
+
+	.about-title {
+		font-size: 8rem;
+		margin-bottom: 2rem;
+	}
+
+	.about-lead {
+		font-size: 2.4rem;
+	}
+
+	.about-sub {
+		font-size: 1.6rem;
+		margin-bottom: 3rem;
+	}
+}
